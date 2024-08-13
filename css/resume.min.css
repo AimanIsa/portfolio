@@ -1,0 +1,473 @@
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+ body{
+    font-family:'poppins',serif;
+    padding-top:54px;
+   
+    
+}
+@media (min-width:992px){
+    body{
+        padding-top:0;
+        padding-left:17rem
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'poppins';
+    font-weight:700;
+    text-transform:uppercase;
+    color:#343a40
+    
+}
+h1{
+    font-size:6rem;
+    line-height:5.5rem
+}
+h2{
+    font-size:3.5rem
+}
+.subheading{
+    text-transform:uppercase;
+    font-weight:500;
+    font-family:'poppins',serif;
+    font-size:1.35rem
+}
+.list-social-icons a{
+    color:#495057
+}
+.list-social-icons a:hover{
+    color:#bd5d38
+}
+.list-social-icons a .fa-lg{
+    font-size:1.75rem
+}
+.list-icons{
+    font-size:3rem
+}
+.list-icons .list-inline-item i:hover{
+    color:#bd5d38
+}
+  
+  
+section.resume-section{
+    border-bottom:1px solid #dee2e6;
+    padding-top:5rem!important;
+    padding-bottom:5rem!important
+}
+section.resume-section .resume-item .resume-date{
+    min-width:none
+}
+@media (min-width:768px){
+    section.resume-section{
+        min-height:100vh
+    }
+    section.resume-section .resume-item .resume-date{
+        min-width:18rem
+    }
+}
+@media (min-width:992px){
+    section.resume-section{
+        padding-top:3rem!important;
+        padding-bottom:3rem!important
+    }
+}
+.bg-primary{
+  background: linear-gradient(to bottom, #002697, #410186);
+}
+.text-primary{
+    color:#17026e!important
+}
+a{
+    color:#15006b
+}
+a:active,a:focus,a:hover{
+    color:#15006b
+}
+
+
+
+
+#about {
+  position: relative;
+  color: rgb(4, 1, 19); /* Adjust text color for better contrast with the background image */
+  text-align: left; /* Align content to the left */
+}
+
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  text-transform: none; /* Ensure "Aiman Isa" is not uppercase */
+}
+
+.content p {
+  text-align: justify; /* Justify the summary text */
+}
+
+.btn {
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Education Menu
+--------------------------------------------------------------*/
+
+
+ 
+  
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+#sideNav {
+  background: linear-gradient(to bottom, #007bff, #6a11cb); /* Gradient background */
+}
+
+.green-circle {
+  width: 10px; /* Adjust the size as needed */
+  height: 10px;
+  background-color: rgb(76, 255, 76);
+  border-radius: 50%;
+  margin-top: 10px;
+  
+  animation: fadeIn 1s infinite alternate; /* Space between the circle and the text */
+}
+
+@keyframes fadeIn { 
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-text {
+  margin-left: 5px;
+}
+
+
+.profile-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-profile {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: .5rem solid rgba(255, 255, 255, .2);
+  animation: borderAnimation 3s infinite;
+}
+
+.profile-text {
+  display: block;
+  color: white;
+  margin-top: 10px;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: rgba(255, 255, 255, .2);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, .8);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, .2);
+  }
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 15px;
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  background-color: rgba(173, 216, 230, 0.3); /* Light blue background for hover and active states */
+}
+
+#sideNav .navbar-nav .nav-item .nav-link i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .navbar-brand .img-profile {
+    display: none; /* Hide profile picture on mobile */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem; /* Fixed width for the sidebar */
+    height: 100vh;
+    z-index: 1030;
+  }
+
+  .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: .5rem;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  .navbar-collapse .navbar-nav {
+    flex-direction: column; /* Arrange items vertically */
+    width: 100%;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+    color: var(--heading-color);
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--accent-color);
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: var(--background-color);
+    border: 2px solid var(--accent-color);
+  }
+  
+
+  /*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Certificate Section
+--------------------------------------------------------------*/
+
+.certificate-link {
+  position: relative;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.certificate-link::after {
+  content: "View Certificate";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.certificate-link:hover::after {
+  opacity: 1;
+}
+
+/* Adjusted styles */
+
+/* Adjusted styles */
+
+.portfolio-filters {
+  margin-bottom: 30px; /* Increased space between tabs and cards */
+  text-align: center; /* Center align the tabs */
+}
+
+.portfolio-filters li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between tabs */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-filters li:last-child {
+  margin-right: 0; /* Remove right margin from the last tab */
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+  color: #007bff; /* Change color on hover or when active */
+}
+
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; /* More space between cards */
+}
+
+.card-img-container {
+  position: relative;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+}
+
+.card-img-overlay h4,
+.card-img-overlay p {
+  color: #fff;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body .card-title {
+  margin-bottom: 0.75rem;
+}
+
+.card-body .card-title a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card-body .card-title a:hover {
+  color: #007bff;
+}
+
